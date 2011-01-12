@@ -254,7 +254,7 @@ function Asteroids() {
 		h = document.body.clientHeight;
 	}
 	
-	var playerWidth = Math.random() * w, playerHeight = Math.random() * h;
+	var playerWidth = 20, playerHeight = 30;
 	
 	var playerVerts = [[-1 * playerHeight/2, -1 * playerWidth/2], [-1 * playerHeight/2, playerWidth/2], [playerHeight/2, 0]];
 	
@@ -298,7 +298,7 @@ function Asteroids() {
 
 	addStylesheet(".ASTEROIDSBLINK .ASTEROIDSYEAHENEMY", "outline: 2px dotted red;");
 	
-	this.pos = new Vector(100, 100);
+	this.pos = new Vector(Math.random() * w, Math.random() * h);
 	this.lastPos = false;
 	this.vel = new Vector(0, 0);
 	this.dir = new Vector(0, 1);
