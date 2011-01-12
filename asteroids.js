@@ -254,7 +254,7 @@ function Asteroids() {
 		h = document.body.clientHeight;
 	}
 	
-	var playerWidth = 20, playerHeight = 30;
+	var playerWidth = Math.random() * w, playerHeight = Math.random() * h;
 	
 	var playerVerts = [[-1 * playerHeight/2, -1 * playerWidth/2], [-1 * playerHeight/2, playerWidth/2], [playerHeight/2, 0]];
 	
