@@ -301,7 +301,7 @@ function Asteroids() {
 	this.pos = new Vector(Math.random() * w, Math.random() * h);
 	this.lastPos = false;
 	this.vel = new Vector(0, 0);
-	this.dir = new Vector(0, 1);
+	this.dir = new Vector(Math.random(), Math.random());
 	this.keysPressed = {};
 	this.firedAt = false;
 	this.updated = {
